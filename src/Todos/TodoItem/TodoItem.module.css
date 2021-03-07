@@ -1,0 +1,44 @@
+.todoItem {
+    width: 100%;
+    background-color: #F2EEF2;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px 20px 15px 110px;
+    position: relative;
+
+}
+
+.todoItem-btn,
+.todoItem-number {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+
+}
+
+.todoItem-number {
+    left: 10px;
+}
+
+.todoItem-done {
+    background-color: grey;
+}
+
+.todoItem-btn {
+    right: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.todoItem-btn:hover {
+    color: #fff;
+    background-color: #000;
+}
+.hide {
+    display: none;
+}

@@ -1,0 +1,8 @@
+.weather__list {
+    max-width: 1950px;
+    padding: 0 15px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}  

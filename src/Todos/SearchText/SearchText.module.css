@@ -1,0 +1,26 @@
+.todo-search {
+    display: inline-block;
+}
+
+.todo-searchInput {
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #000;
+    padding: 7px 5px;
+    outline: none;
+    width: 240px;
+}
+
+.todo-searchBtn {
+    border-radius: 0 10px 10px 0;
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 500;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.todo-searchBtn:hover {
+    background-color: #000;
+    color: #fff;
+}

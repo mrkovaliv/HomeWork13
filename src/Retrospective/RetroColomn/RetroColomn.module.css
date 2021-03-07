@@ -1,0 +1,101 @@
+.colomn {
+    width: 350px;
+    padding: 0 10px 7px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    height: 100%;
+    margin: 0 30px 50px 0;
+}
+
+.colomn-title {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    position: relative;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.colomn-title span {
+    position: absolute;
+    right: 10px;
+    padding-left: 10px;
+}
+
+.colomn-btn {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px 5px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.colomn-btn:hover {
+    background-color: #434243;
+    color: #fff;
+
+}
+
+.colomn-list {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    margin-top: 20px;
+}
+
+.colomn-form {
+    position: relative;
+    padding-bottom: 35px;
+
+}
+
+.colomn-input {
+    display: block;
+    outline: none;
+    width: 100%;
+    padding: 20px 5px;
+    border-radius: 7px;
+    border: 1px solid #000;
+
+}
+
+.colomn-create,
+.colomn-cancel {
+    padding: 5px 5px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    margin-right: 5px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    cursor: pointer;
+}
+
+.colomn-create:hover,
+.colomn-cancel:hover {
+    background-color: #fff;
+    color: black;
+
+}
+
+.colomn-cancel {
+    right: 0;
+
+}
+
+.hide {
+    display: none !important;
+}

@@ -1,0 +1,46 @@
+.todo {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 20px auto 0;
+
+}
+
+.todo-select {
+    margin-right: 25px;
+    min-width: 200px;
+    padding: 3px;
+    outline: none;
+
+}
+
+.todo-addBtn {
+    margin-right: 25px;
+
+}
+
+.todo-addBtn {
+    padding: 7px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 500;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.todo-addInput {
+    border: 1px solid #000;
+    padding: 7px 5px;
+    outline: none;
+    width: 240px;
+}
+
+.todo-addBtn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.todo-list {
+    margin-top: 40px;
+    list-style: none;
+    padding: 0;
+}
