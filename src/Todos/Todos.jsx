@@ -3,12 +3,6 @@ import TodoItem from "./TodoItem/TodoItem";
 import SearchText from "./SearchText/SearchText";
 import styles from "./Todos.module.css";
 
-// Якщо створити декілька карток і якщо одну з них позначити як виконану то всі інші створені картки
-// позначаться теж як виконані це через те що в них з сервера приходить однаковий id при створені 
-// бо по-факту нова картка не створюється на сервері, тобто якщо б вона створювалася на сервері
-// тоді б приходив у всіх новостворених карток різний id і тоді б не було такої проблеми
-// також через те що в них однаковий id я як key для кожної картки робив id + performance.now()
-
 class ToDos extends React.Component {
     constructor(props) {
         super(props);
@@ -73,6 +67,8 @@ class ToDos extends React.Component {
                 .then((response) => response.json())
                 .then((json) =>
                     this.setState(() => {
+// Новоствореним карткам я задаю id вручну бо із сервера приходить однакове id для всіх новостворених карток
+                        json.id = performance.now();
                         return {
                             todos: [...this.state.todos, json],
                         };
@@ -135,7 +131,7 @@ class ToDos extends React.Component {
     getSelectedBold(text) {
         this.setState(() => {
             return {
-                keywords: text,
+                keywords: text
             };
         });
     }
@@ -167,7 +163,7 @@ class ToDos extends React.Component {
                 <ul className={styles["todo-list"]}>
                     {todos.map((todo, index) => (
                         <TodoItem
-                            key={todo.id + performance.now()}
+                            key={todo.id}
                             setCompleted={setCompleted}
                             todo={todo}
                             keywords={keywords}
